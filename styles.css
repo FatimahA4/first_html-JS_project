@@ -1,0 +1,337 @@
+﻿
+/*---------------------------------------------------- GENERAL STYLES---------------------------------------------------*/
+
+
+@media (max-width: 1024px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: #000000;
+        background-color: #FFFAED;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh; /* to make sure that the background covers the whole screen */
+    }
+}
+
+/* the font for paragraph --> black */
+p{
+   font-family: 'Lato', sans-serif; 
+   font-weight: 500;                
+   color: #000000; 
+}
+h3{
+     font-family: 'Lato', sans-serif; 
+     color:  #ffffff;
+     font-weight: bold;
+     font-size: 20px;  
+     text-align: center;
+}
+.labels{
+  font-family: 'Lato', sans-serif; 
+     color:  #ffffff;
+     font-weight: bold;
+     font-size: 20px;  
+     text-align: center; 
+    
+}
+
+.paragraph{
+    font-size: 25px;
+    line-height: 1.6;           /* to add space between lines */
+    text-align: justify;        /* to make the alignment equal from both sides */
+}
+
+/* for red words within the text */
+.highlight {
+  color:  #FF5770;
+  font-weight: bold;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- HEADER ---------------------------------------------------*/
+header {
+    display: flex;               /* so items are beside each other  */
+    align-items: center;         
+    gap: 20px;                   /* space between image and text */
+    background-color: #476F56;   
+    border-radius: 10px;         /* for it to be round */
+}
+
+/* style for the header  */
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 36px;         
+}
+.left {
+    margin-left: 100px;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- NAVIGATION BAR ---------------------------------------------------*/
+
+.nav-bar {
+    position: relative;
+    z-index: 1000; 
+    display: flex;                
+    justify-content: center;      
+    gap: 30px;                    /* space between links */
+    background: linear-gradient(to right, #FF5770, #FF8A70);   /* gradient background */
+
+
+    padding: 15px 30px;           /* space inside the bar */
+    border-radius: 25px;          
+    width: fit-content;           
+    margin: 20px auto;            /* center the bar horizontally */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border: 2px solid #476F56;
+ 
+}
+.nav-bar a {
+    color: white;                 /* white text for contrast */
+    text-decoration: none;        /* remove underline */
+    font-size: 18px;
+}
+
+
+a, .button {
+    color: #476F56; /* muted green */
+}
+
+a:hover, .button:hover {
+    color:  #476F56; /* pink-red on hover */
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- HOME PAGE ---------------------------------------------------*/
+/* for the welcome message in home page */
+.welcome-container {
+    display: flex;           
+    align-items: center;    
+    gap:150px;               /* gap between welcome text and photo */
+    margin-left: 100px; 
+}
+
+.welcome-container h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0; 
+    color: #FF5770;
+}
+/*----------------------------------------*/
+
+/* for the quote under the image in home page */
+.p2 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;                
+    color: #FF5770;  
+    font-size: 18px;
+}
+.welcome-figure {
+    display: flex;
+    flex-direction: column;  /* stack image and caption vertically */
+    align-items: center;     
+    gap: 10px;               /* space between image and caption */
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- ABOUT PAGE ---------------------------------------------------*/
+/* for about page */
+table{
+    width: 70%;                  /* for a wider table */
+    margin: 0 auto;              /* so the table is in the center horizontally */
+    border: 1px solid black;
+    border-collapse: collapse;   /* if i didn't put it i will have 2 borders  */
+    text-align: center;         
+    font-family: 'Lato', sans-serif;
+    font-size: 25px; 
+   
+}
+
+  td, th {
+    border: 1px solid black;
+  }
+
+.list-container {
+    margin-top: -3%;
+    margin-left: 5%; 
+}
+
+/* for article element in about page */
+.about-me{
+    display: flex;           
+    align-items: center;    
+    gap:150px;               
+    margin-left: 100px; 
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- GALLERY PAGE ---------------------------------------------------*/
+/* for gallery page */
+.gallery {
+    margin-top: 5% ; 
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 2%;     
+    position: relative;
+    z-index: 1;              /* keep the gallery below the navigation bar */
+
+   
+}
+
+.gallery figure {
+    margin: 1%;
+    text-align: center;       
+}
+
+    .gallery-item {
+        background-color: #476F56;
+        border-radius: 15px;
+        padding: 1%;
+        width: 40%; /* two items side by side even in small screens */
+        min-width: 250px; /* prevents items from getting too small */
+    }
+
+.gallery-item img {
+    margin-top: -15%;
+    width: 100%;
+    height: auto;
+    display: block;          /*makes the image fit inside the figure item */
+}
+
+.gallery figcaption {
+    margin-top: -15%;
+    margin-bottom: 1%;
+  
+    font-size: 20px;
+    color:  #ffffff;        
+    text-align: center;
+    
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- CONTACT PAGE ---------------------------------------------------*/
+.contact {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+    background: #476F56;          
+    padding:3%;              
+    border-radius: 10px; 
+    width:  30%;                /* smaller width than page */
+    max-width: 90%;             /*  for small screens */
+    margin-left: 32%; 
+}
+
+.contact input{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.textarea{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 100%;  
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.btn {
+  
+   background-color: #FF5770;
+   color: white;
+   padding: 2% 4%;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s; /* smooth color change */
+    }
+
+/* Add space between buttons */
+.btn + .btn {
+  margin-top: 2%;        
+}
+
+.btn:hover {
+   background-color: #FF8AA0; /* color when mouse is over */
+        }
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------- FOOTER ---------------------------------------------------*/
+
+footer {
+    background-color: #476F56; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 0; 
+    margin: 0 auto;                  /* centers it horizontally */
+    border-radius: 10px;
+    margin-top: 200px; 
+}
+
+
+/* Footer navigation */
+.footer-nav {
+   margin-bottom: 20px;
+   text-align: center; 
+}
+.footer-nav a {
+    color: #ffffff;           /* white text for contrast */
+    text-decoration: none;    /* remove underline */
+    font-size: 18px;
+    margin: 0 10px;           /* space between links */
+}
+
+.footer-nav a:hover {
+    color: #FF5770;           
+}
+
+.footer-copyright {
+    color: #ffffff;       
+    font-size: 14px;      
+    margin: 0;            /* remove extra spacing */
+    text-align: center;   
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

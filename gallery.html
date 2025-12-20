@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- meta & name on the tap-->
+    <meta charset="utf-8">
+    <title>Fatimah-Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- for different screens -->
+    <meta name="description" content="Fatimah's website">
+    <meta name="keywords" content="Fatimah, about, skills, gallery">
+    <meta name="author" content="Fatimah Alhebshi">
+    <!-- ============================================================= -->
+    <!-- link to styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ============================================================= -->
+    
+
+
+</head>
+<body onload="showMessage()">
+    <!-- header (same on all pages with diff page name) -->
+    <header>
+        <img src="profile.png" width="130" height="130" alt="profile picture">
+        <h2>Fatimah Alhebshi - Gallery</h2>
+    </header>
+    <!-- ============================================================= -->
+    <!-- navigation bar (same on all pages)  -->
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!-- ============================================================= -->
+    <!-- Gallery page content  -->
+
+    <div class="gallery">
+        <figure id="figer1" class="gallery-item" onclick="changeColor1()">
+            <img src="dashboard.png" width="700" height="700" alt="dashboard picture">
+            <figcaption>
+                One of my passions is creating clear and insightful data <br />visualizations.
+                This dashboard is one of the projects I built,<br />designed to help users quickly
+                understand key metrics and <br />trends at a glance.
+            </figcaption>
+
+
+        </figure>
+
+        <figure id="figer2" class="gallery-item" onclick="changeColor2()">
+            <img src="design.png" width="700" height="700" alt="dashboard picture">
+            <figcaption>
+                I love using my design skills to support university clubs<br /> as a volunteer.
+                This is a template I created to help share <br />their events and activities.
+            </figcaption>
+        </figure>
+
+        <figure id="figer3" class="gallery-item" onclick="changeColor3()">
+            <img src="nature.png" width="700" height="700" alt="dashboard picture">
+            <figcaption>
+                I enjoy taking photos and collecting memories, turning <br />everyday moments into lasting stories.
+            </figcaption>
+        </figure>
+
+        <figure id="figer4" class="gallery-item" onclick="changeColor4()">
+            <img src="gym.png" width="700" height="700" alt="dashboard picture">
+            <figcaption>
+                I love going to the gym to stay active and support a <br />balanced, healthy lifestyle.
+            </figcaption>
+        </figure>
+
+
+    </div>
+
+
+    <!-- page is loaded and change background color of figures  -->
+    <script src="events_in_gallery.js"></script>
+    <!-- ============================================================= -->
+
+
+
+
+    <!-- fotter (same on all pages) -->
+    <footer>
+        <nav class="footer-nav">
+            <p>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="contact.html">Contact</a>
+            </p>
+        </nav>
+
+        <a href="https://www.linkedin.com/in/fatimahalhebshi/">
+            <img src="linkedin3.png" width="100" height="100" alt="linkedin icon">
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=966550068001">
+            <img src="whatsapp2.png" width="100" height="100" alt="whatsapp icon">
+        </a>
+        <p class="footer-copyright">Copyright &copy; 2025 developed by Fatimah Alhebshi </p>
+
+    </footer>
+    <!-- ============================================================= -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- meta & name on the tap-->
+    <meta charset="utf-8">
+    <title>Fatimah-Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- for different screens -->
+    <meta name="description" content="Fatimah's website">
+    <meta name="keywords" content="Fatimah, about, skills, gallery">
+    <meta name="author" content="Fatimah Alhebshi">
+    <!-- ============================================================= -->
+    <!-- link to styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- ============================================================= -->
+    
+  
+<body>
+
+    <!-- header (same on all pages with diff page name) -->
+    <header>
+        <img src="profile.png" width="130" height="130" alt="profile picture">
+        <h2>Fatimah Alhebshi  - Contact</h2>
+    </header>
+    <!-- ============================================================= -->
+    <!-- navigation bar (same on all pages)  -->
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+    <!-- ============================================================= -->
+    <!-- Contact page content  -->
+    
+
+    
+
+    <article class="contact">
+        <form onsubmit="return validateForm(event)">
+            <h3> contact Fatimah:  </h3>
+            <label class="labels"> Name: </label>
+            <input type="text" id="name" name="fnmae" size="20" maxlength="25" placeholder="Enter your name">
+
+            <br /> <br />
+
+            <label class="labels"> Last Name: </label>
+            <input type="text" id="lastName" name="lnmae" size="20" maxlength="25" placeholder="Enter your last name">
+
+            <br /> <br />
+
+            <label class="labels"> Email: </label>
+            <input type="email" id="email" name="useremail" placeholder="name@gamil.com">
+
+            <br /> <br />
+
+            <label class="labels"> Subject: </label>
+            <input type="text" id="subject" name="subject" class="contact-input" placeholder="e.g.Question">
+
+            <br /> <br />
+
+            <div class="form-group">
+                <label class="labels"> Message: </label>
+                <textarea class="textarea" id="message" name="message" rows="4" cols="30" placeholder="Write your inquiry..."></textarea>
+            </div>
+
+            <br /> <br />
+            <label  class="labels" id="captchaQuestion"></label>
+            <input type="text" id="captchaAnswer" placeholder="Enter answer">
+            <br /> <br />
+
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" value="Reset" class="btn">
+
+        </form>
+    </article>
+
+
+
+    <!-- ============================================================= -->
+    <!-- fotter (same on all pages) -->
+    <footer>
+        <nav class="footer-nav">
+            <p>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="contact.html">Contact</a>
+            </p>
+        </nav>
+
+        <a href="https://www.linkedin.com/in/fatimahalhebshi/">
+            <img src="linkedin3.png" width="100" height="100" alt="linkedin icon">
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=966550068001">
+            <img src="whatsapp2.png" width="100" height="100" alt="whatsapp icon">
+        </a>
+        <p class="footer-copyright">Copyright &copy; 2025 developed by Fatimah Alhebshi </p>
+
+    </footer>
+    <!-- ============================================================= -->
+
+    <script src="formValidation.js"></script>
+</body>
+</html>
